@@ -1,0 +1,13 @@
+#nav1 {
+  /*color: green;*/
+  background-color: MidnightBlue;
+  font-size: 24px;
+  font-weight: bold;
+max-height: 10%vh; 
+}
+ul.nav a:hover { color: White !important; }
+
+#nav2 {
+  color:pink;
+  background-color: #88BBD6;
+}

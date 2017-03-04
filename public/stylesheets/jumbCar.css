@@ -1,0 +1,21 @@
+.jumbotron {
+  max-height: 16%;
+  width: 100%;
+  background-color: SteelBlue;
+  color: #E9E9E9;
+  padding: 40px;
+  margin: 0;
+}
+.carousel-inner > .item > img {
+  width: 80%;
+  margin: auto;
+
+
+}
+
+.newTrip {
+  padding-left: 1em;
+}
+.itinDeets {
+  font-size: 1.6em;
+}

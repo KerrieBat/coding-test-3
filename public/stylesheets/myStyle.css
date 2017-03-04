@@ -1,0 +1,69 @@
+html {
+  background-color: #E9E9E9;
+}
+.container {
+  /*max-width: 750px;*/
+  background-color: #E9E9E9;
+width: 90%;
+}
+
+.about {
+  background-image:url("/images/borobodour.JPG");
+  background-size: cover;
+  height:100vh;
+  width:100%;
+}
+.logpage {
+  background-image:url("/images/krabi2.JPG");
+  background-size: cover;
+  height:100vh;
+}
+.newhol {
+  background-image:url("/images/krabi2.JPG");
+  background-size: cover;
+  height:100vh;
+}
+.first {
+  max-height: 30%;
+}
+
+
+/*.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      /*width: 70%;*/
+      /*margin: auto;
+  }*/
+
+/*white color for text*/
+.color1 {
+    color: white;
+  }
+  /*linen color for text*/
+.color2 {
+  color: #E9E9E9;
+}
+/*linen color for background*/
+.color3 {
+background-color: #E9E9E9;
+}
+/*plaster grey color for font*/
+.color4 {
+  color: #CDCDCD;
+}
+/*ice blue color for background*/
+.color5 {
+  background-color: #99D3DF;
+}
+/*freshwater blue color for background*/
+.color6 {
+  background-color: #88BBD6;
+}
+/*freahwater blue color for text */
+.color7 {
+  color: #88BBD6;
+}
+
+.bee {
+  max-width: 20px;
+  max-height: 20px;
+}
