@@ -39,9 +39,25 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact')
 })
 
-// FAQ page
-app.get('/FAQ', (req, res) => {
-    res.render('pages/FAQ')
+app.post('/contact', (req, res) => {
+  res.render('/')
+})
+
+// issues page
+app.get('/issues', (req, res) => {
+    res.render('pages/issues')
+})
+
+app.post('/issues', (req,res) => {
+  var name = req.body.name
+  var email = req.body.email
+  res.render('pages/report')
+})
+
+// reports page
+app.post('/report', (req, res) => {
+  var suggestion = req.body.suggestion
+  res.render('/')
 })
 
 // Projects page
@@ -49,10 +65,6 @@ app.get('/projects', (req, res) => {
     res.render('pages/projects')
 })
 
-// Volunteering page
-app.get('/volunteer', (req, res) => {
-    res.render('pages/volunteer')
-})
 
 
 //

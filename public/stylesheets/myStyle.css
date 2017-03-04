@@ -21,13 +21,14 @@ width: 90%;
   padding: 0;
 }
 /*for contact page*/
-.form-background {
+.contact {
   background-image:url("/images/OG cmon strip.jpg");
   background-size: cover;
   height: 50%;
   padding-top: 3%;
   font-size: 20px;
 }
+
 form {
   padding-left: 5%;
 }
@@ -35,26 +36,26 @@ form {
   color: White;
 }
 
-.logpage {
-  background-image:url("/images/??.JPG");
+/*for issues page*/
+.issues {
+  background-image:url("/images/feet strip.jpg");
   background-size: cover;
-  height:100vh;
+  height: 50%;
+  padding-top: 3%;
+  font-size: 20px;
 }
-.newhol {
-  background-image:url("/images/??.JPG");
+.suggestion {
+  color: White;
+  background-image:url("/images/krabi strip.jpg");
   background-size: cover;
-  height:100vh;
+  height: 50%;
+  padding-top: 3%;
+  font-size: 20px;
 }
-.first {
-  max-height: 30%;
+.suggest-input {
+  margin-right: 25%;
 }
 
-
-/*.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      /*width: 70%;*/
-      /*margin: auto;
-  }*/
 
 /*white color for text*/
 .color1 {
