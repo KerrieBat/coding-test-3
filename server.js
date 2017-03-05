@@ -10,19 +10,12 @@ app.use(express.static(__dirname + '/public'))
 app.use('jquery', express.static(__dirname + '/node_modules/jquery/dist/'))
 
 var router = express.Router();
-// var path = __dirname + '/views/';
+var path = __dirname + '/views/';
 
 router.use(function (req,res,next) {
   console.log('/' + req.method);
   next();
 });
-
-// router.get('/',function(req,res){
-//   res.render('/pages/index')
-// });
-
-
-
 
 //home page
 app.get('/', (req, res) => {
@@ -49,10 +42,16 @@ app.get('/issues', (req, res) => {
 })
 
 app.post('/issues', (req,res) => {
-  var name = req.body.name
-  var email = req.body.email
-  res.render('pages/report')
-})
+  var user = {
+    name: req.body.name,
+    email: req.body.email,
+    message: req.body.message
+  }
+  console.log(res.body);
+  console.log(user.name);
+  res.render('pages/report', user)
+
+});
 
 // reports page
 app.post('/report', (req, res) => {
@@ -66,18 +65,8 @@ app.get('/projects', (req, res) => {
 })
 
 
+app.use("/",router);
 
-//
-// router.get("/about",function(req,res){
-//   res.sendFile(path + "about.html");
-// });
-//
-// router.get("/contact",function(req,res){
-//   res.sendFile(path + "contact.html");
-// });
-//
-// app.use("/",router);
-//
 // app.use("*",function(req,res){
 //   res.sendFile(path + "404.html");
 // });
